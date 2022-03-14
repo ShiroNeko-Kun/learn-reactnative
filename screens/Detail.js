@@ -5,20 +5,20 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 export default function Detail({ navigation, route }) {
   return (
     <View style={styles.container}>
-      <Text>Ini Halaman Detail untuk level </Text>
+      <Text style={{ color: '#fff'}}>ini halaman detail </Text>
       <Button
         title="Back"
         onPress={() => navigation.navigate('Home')}
       />
-      <StatusBar style="auto" />
+      <StatusBar style={{ backgroundColor: '#000'}} />
     </View>
   );
 }
-
+     
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
     alignItems:'center',
     justifyContent: 'flex-start',
   },
